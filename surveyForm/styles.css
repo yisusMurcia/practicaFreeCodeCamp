@@ -1,0 +1,36 @@
+html{
+    background-color: #1c1c1c;
+    font-family: cursive;
+  }
+  h1{
+    text-align: center;
+    margin: 0 10%;
+    padding: 5px;
+    border: solid 2px purple;
+    border-radius: 15px;
+    background-color: black;
+  }
+  h1, p{
+    font-family: fantasy;
+    color: #2beaccdf;
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  form{
+    background-color: #8591c8;
+    margin: 0 10%;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+  }
+  select, textarea{
+    display: block;
+  }
+  input, select, textarea{
+    color: black;
+    background-color: #2beaccdf;
+    margin: auto;
+  }
+  label{
+    display: inline-block;
+  }

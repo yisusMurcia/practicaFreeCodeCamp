@@ -1,0 +1,40 @@
+<DOCTYPE html>
+    <html lang= "en">
+      <head>
+        <title>Survey-form.freecodecamp.rocks</title>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="description">Thanks for taking the time to help us to improve the platform</p>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name<input required placeholder="Enter your name" id="name" type="text"/></label>
+          <label id="email-label" for="email">Email<input required placeholder="Enter your email" id="email" type="email"/></label>
+          <label id="number-label" for="number">Age<input id="number" placeholder="Age" type="number" min="10" max="99"/></label>
+          <label for="dropdown">Which option best describes your current rol?<select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Estudent</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+          <label>Would you recomend freeCodeCamp to a friend?
+            <input type="radio" name="recommend" value="1" />Definilitely
+            <input type="radio" name="recommend" value="2"/>Maybe
+            <input type="radio" name="recommend" value="3"/>Not sure
+            </label>
+            <label>What do you like to see improved?
+              <input type="checkbox" value="design"/> Website design
+              <input type="checkbox" value="proyects"/> Proyects
+              <input type="checkbox" value="challengs"/>Challenges
+              <input type="checkbox" value="videos"/>Videos
+              <input type="checkbox" value="wiki"/>Wiki
+              <input type="checkbox" value="forum"/>Forums
+            </label>
+            <label for="any">Any comments or sugestions?<textarea id="any"></textarea>
+            </label>
+            <input type="submit" value="submit" id="submit">
+        </form>
+      </body>
+    </html>
