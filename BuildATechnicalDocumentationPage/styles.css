@@ -1,0 +1,32 @@
+html{
+    background-color: #1c1c1c;
+  }
+  *{
+    color: purple;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    font-size: 2rem;
+    color: orangered;
+  }
+  .main-section{
+    padding: 10px;
+    border: solid 2px #2beaccdf;
+    border-radius: 10px;
+    background-color: #121212;
+    margin: 10px auto;
+  }
+  li{
+    background-color: #1c1c1c;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  @media(min-width:400px){
+    #navbar{
+      flex-wrap: wrap;
+    }
+  }
