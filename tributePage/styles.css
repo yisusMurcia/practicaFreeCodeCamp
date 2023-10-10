@@ -1,0 +1,24 @@
+html{
+    color: #2beacc;
+    background-color: black;
+  }
+h1{
+    font-family: Tahoma;
+    background-color: #1c1c1c;
+    padding: 1em;
+    margin: 0.75em;
+    border-radius: 30px;
+}
+#img-div{
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 25%;
+}
+#image{
+    display: block;
+    max-width: 100%;
+    border-radius: 25%;
+}
+figcaption{
+    font-size: 0;
+}
