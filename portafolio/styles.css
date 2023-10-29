@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1c1c1c;
+    color: #8591c8;
+    font-family: 'Segoe UI', Tahoma;
+    scroll-behavior: smooth;
+}
+
+section{
+    margin: 5px;
+    padding: 8px;
+    background: #111;
+    border-radius: 8px;
+}
+
+h1{
+    font-size: 2rem;
+    color: orangered;
+}
+h1,h2{
+    text-align: center;
+    margin: 8px;
+}
+
+img{
+    border-radius: 20%;
+    margin-bottom: 5px;
+}
+#welcome-section>div{
+    float: right;
+    align-self: center;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    margin: 0 10px;
+    padding: 12px 8px;
+    border-radius: 12px;
+    border: solid 2px #383838;
+}
+
+a{
+    color: #2bb4ea;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover{
+    color: #2b38ea;
+    text-decoration: underline;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 5px;
+    padding: 10px;
+    justify-content: space-around;
+}
+#projects h2{
+    grid-column: 1 / -1;
+}
+.project-tile a{
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 8px;
+    display: grid;
+    align-content: space-around;
+    gap: 20px;
+}
+.project-tile a:hover{
+    text-decoration: none;
+    padding: 5px;
+    border: solid 3px #2bb4ea;
+}
+
+.project-tile:hover p{
+    text-decoration: underline;
+}
+.project-tile p{
+    color: purple ;
+}
+
+#profile-link{
+    margin: 5px;
+    background-color: #1c1c1c;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+@media (max-width: 550px){
+    #welcome-section{
+        display: flex;
+        align-items: center;
+    }
+    #projects{
+        display: block
+    }
+    .project-tile{
+        width: 200px;
+        margin: 5px auto;
+    }
+}
