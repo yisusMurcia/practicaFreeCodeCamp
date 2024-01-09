@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    color: orangered;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    text-align: center;
+    background-color: #1f1f1f;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+h1{
+    color: orangered;
+}
+
+main{
+    margin: 8px 5px;
+    background-color: #072c70;
+    padding: 0.8em;
+    border-radius: 8px;
+}
+main label{
+    background-color: #1c1c1c;
+    color: purple;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #1c1c1c;
+    border: none;
+    color: orangered;
+}
+
+button{
+    margin: 8px;
+    color: goldenrod;
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
