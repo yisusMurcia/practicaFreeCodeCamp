@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1c1c1c;
+    color: purple;
+}
+h1{
+    text-align: center;
+    background-color: #383838;
+    margin: 5px;
+    border-radius: 10px;
+}
+section{
+    background-color: #383838;
+    padding: 8px;
+    margin: 3px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    background-color: #2beacc;
+    border: none;
+    border-radius: 5px;
+}
+button{
+    color: orangered;
+    background-color: #2beacc;
+    border-radius: 5px;
+    padding: 4px;
+    border: none;
+}
+div{
+    padding: 5px;
+}
