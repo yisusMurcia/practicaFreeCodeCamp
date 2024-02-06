@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: purple;
+}
+
+input{
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    color: #2beacc;
+}
+
+button{
+    margin-top: 8px;
+    border: none;
+    color: #1c1c1c;
+    background-color: #2b84ea;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+div{
+    background-color: #383838;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
