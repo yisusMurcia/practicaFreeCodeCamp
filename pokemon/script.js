@@ -1,17 +1,40 @@
 const searchInput= document.getElementById("search-input");
 const searchBtn= document.getElementById("search-button");
 
-const pokemoneName= document.getElementById("pokemon-name");
+const pokemonName= document.getElementById("pokemon-name");
 const pokemonId= document.getElementById("pokemon-id");
-const weight= document.getElementById("weight");
-const height= document.getElementById("height");
+const pokemonWeight= document.getElementById("weight");
+const pokemonHeight= document.getElementById("height");
 const types= document.getElementById("types");
-const specialAtk= document.getElementById("special-attack");
-const specialDfe= document.getElementById("special-defense");
-const speed= document.getElementById("speed");
+const pokemonSpecialAtk= document.getElementById("special-attack");
+const pokemonSpecialDfe= document.getElementById("special-defense");
+const pokemonSpeed= document.getElementById("speed");
+
+const showData= (data)=>{
+    const {name, id, weight, height, type, specialAtk, specialDfe, speed}= data;
+    pokemonName.innerText= name;
+    pokemonId.innerText= id;
+    pokemonWeight.innerText= weight;
+    pokemonHeight.innerText= height;
+    types.innerText= type;
+    pokemonSpecialAtk.innerText= specialAtk;
+    pokemonSpecialDfe.innerText= specialDfe;
+    pokemonSpeed.innerText= speed;
+};
 
 const pokemonApi= async ()=>{
-    const res= await fetch("https://pokeapi-proxy.freecodecamp.rocks/api/pokemon");
-    const data= await res.json()
-    return data;
+    try {
+        let pokemonOrId= searchInput.value;
+        if(typeof(pokemonOrId)== "string" && pokemonOrId!== pokemonOrId.toLowerCase()){
+            pokemonOrId= pokemonOrId.toLowerCase();
+        };
+        const res= await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonOrId}`);
+        const data= await res.json();
+        showData(data);
+        console.log(data);
+    } catch (error) {
+        alert("Pokémon not found");
+    };
 };
+
+searchBtn.addEventListener("click", pokemonApi);

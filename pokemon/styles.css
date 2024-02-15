@@ -32,6 +32,7 @@ input{
     border: none;
     border-radius: 5px;
     margin: 3px;
+    color: #fff;
 }
 input:hover{
     padding: 2px;
