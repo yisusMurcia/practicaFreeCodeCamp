@@ -25,10 +25,10 @@ const showData= (data)=>{
     const img= document.getElementById("sprite") || document.createElement("img");
     img.src= sprites.front_default;
     img.id= "sprite";
-    divEl.appendChild(img);
+    divEl.appendChild(img)
     pokemonHp.innerText= stats[0].base_stat;
     attack.innerText= stats[1].base_stat;
-    defense.innerText= stats[2].base_stat;
+    defense.innerText= stats[2].base_stat
     pokemonSpecialAtk.innerText= stats[3].base_stat;
     pokemonSpecialDfe.innerText= stats[4].base_stat;
     pokemonSpeed.innerText= stats[5].base_stat;
